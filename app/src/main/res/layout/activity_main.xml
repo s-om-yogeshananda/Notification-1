@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="56dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="লিকুইড গ্লাস\nনোটিফিকেশন প্যানেল"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="স্ক্রিনের উপরের হ্যান্ডেল থেকে নিচে টানলে প্যানেল খুলবে"
+            android:textColor="#CCFFFFFF"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/glass_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tvListener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvOverlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnListener"
+            style="@style/GlassBtn"
+            android:text="১. নোটিফিকেশন অ্যাক্সেস দিন" />
+
+        <TextView
+            android:id="@+id/btnOverlay"
+            style="@style/GlassBtn"
+            android:text="২. অন্য অ্যাপের উপর দেখানোর অনুমতি" />
+
+        <TextView
+            android:id="@+id/btnStart"
+            style="@style/GlassBtn"
+            android:text="৩. প্যানেল চালু করুন" />
+
+        <TextView
+            android:id="@+id/btnPreview"
+            style="@style/GlassBtn"
+            android:text="প্রিভিউ দেখুন" />
+
+        <TextView
+            android:id="@+id/btnStop"
+            style="@style/GlassBtn"
+            android:text="প্যানেল বন্ধ করুন" />
+    </LinearLayout>
+</ScrollView>
